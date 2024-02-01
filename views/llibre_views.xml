@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_llibre_form">
+            <field name="name">llibre.form</field>
+            <field name="model">llibreria.llibre</field>
+            <field name="arch" type="xml">
+                <form string="Llibre">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="preu"/>
+                            <field name="exemplars"/>
+                            <field name="data"/>
+                            <field name="segonama"/>
+                            <field name="estat"/>
+                            <field name="rotura_estoc" readonly="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
